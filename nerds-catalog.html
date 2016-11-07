@@ -7,20 +7,23 @@
   <body>
     <!--Шапка-->
     <header class="main_header">
-      <div class="container">
+        <div class="container">
+        <!--Слайдер-->
         <div class="logo">
           <a href="#"><img src="/logo.img" width="200" height="100"></a>
         </div>
+
         <nav class="main-navigation">
-          <ul>
+            <ul>
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
             <li><a href="#">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
+
         </nav>
-        <div class="basket_block">
-          <a class = "basket" href="#">Корзина</a>
+        <div class="cart_block">
+          <a class = "cart" href="#">Корзина</a>
         </div>
         <h1>Магазин готовых шаблонов</h1>
       </div>
@@ -73,7 +76,7 @@
           <div class="info">
             <h3><a href="#">Sedona</a></h3>
             <p>Информационный сайт<br> для туристов</p>
-            <a href="#"><div class="price">9900 руб</div></a>
+            <a class="price" href="#">9900 руб</a>
           </div>
         </div>
         <div class="item">
@@ -81,7 +84,7 @@
           <div class="info">
             <h3><a href="#">Pink</a></h3>
             <p>Сайт мобильного приложения</p>
-            <a href="#"><div class="price">8900 руб</div></a>
+            <a class="price" href="#">8900 руб</a>
           </div>
         </div>
         <div class="item">
@@ -89,7 +92,7 @@
           <div class="info">
             <h3><a href="#">Borodinski</a></h3>
             <p>Cайт барбершопа<br> для мужчин</p>
-            <a href="#"><div class="price">10500 руб</div></a>
+            <a class="price" href="#">10500 руб</a>
           </div>
         </div>
         <div class="item">
@@ -97,7 +100,7 @@
           <div class="info">
             <h3><a href="#">Mishka</a></h3>
             <p>Сайт милых изделий<br> ручной работы для дома</p>
-            <a href="#"><div class="price">13200 руб</div></a>
+            <a class="price" href="#">13200 руб</a>
           </div>
         </div>
         <div class="item">
@@ -105,7 +108,7 @@
           <div class="info">
             <h3><a href="#">A+</a></h3>
             <p>Образовательный сайт курсов<br> по различным специальностям</p>
-            <a href="#"><div class="price">7600 руб</div></a>
+            <a class="price" href="#">7600 руб</a>
           </div>
         </div>
         <div class="item">
@@ -113,14 +116,16 @@
           <div class="info">
             <h3><a href="#">Кваст</a></h3>
             <p>Сайт о проиводстве<br> крафтового кваса</p>
-            <a href="#"><div class="price">8950 руб</div></a>
+            <a class="price" href="#">8950 руб</a>
           </div>
         </div>
         <!--кнопки страниц-->
-        <a class="btn" href="#">1</a>
-        <a class="btn" href="#">2</a>
-        <a class="btn" href="#">3</a>
-        <a class="btn_next" href="#">Следующая</a>
+        <ul class="btn_group">
+        <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
+        </ul>
       </div>
     </main>
 
@@ -140,6 +145,20 @@
         <p>тел. +7(812) 275-75-75</p>
         <!--Как вообще лучше делать кнопки??? a vs input vs button-->
         <a class="text_us" href="#">Напишите нам</a>
+        <!--Форма, выходящая по клику "напишите нам"-->
+        <div class="message">
+          <form action="#" method="post">
+            <h2>Напишите нам</h2>
+            <a href="#"><img src="#" width="42" height="38"></a>
+            <label for="name">Имя</label>
+            <input type="text" name="user_name" value="Представьтесь, пожалуйста" id="name">
+            <label for="name">Ваш e-mail</label>
+            <input type="text" name="e-mail" value="Для отправки ответа" id="mail">
+            <label for="your_text">Имя</label>
+            <textarea name="text" rows="10" cols="20"id="your_text">В свободной форме</textarea>
+            <input type="submit" value="Отправить">
+          </form>
+        </div>
         <section class="footer_social">
           <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
           <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
